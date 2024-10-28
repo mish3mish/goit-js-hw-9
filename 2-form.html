@@ -5,14 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/goit-js-hw-9/2-form.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-9/assets/styles-B4s-4mBC.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-9/assets/styles-B9kkWxtF.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-9/assets/styles-D2sto1Mm.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-9/assets/styles-DXzD2wP2.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
+      <!-- <h1>Welcome to page 3</h1> -->
     </section>
+    <div class="form-wrapper">
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>

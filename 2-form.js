@@ -1,2 +1,2 @@
-import"./assets/styles-B4s-4mBC.js";console.log("Form");
+import"./assets/styles-D2sto1Mm.js";const a=document.querySelector(".feedback-form"),m="feedback-form-state",s=a.elements.email,l=a.elements.message,t={email:"",message:""};a.addEventListener("input",o);function o(e){e.target.name==="email"?t.email=e.target.value:(e.target.name="message")&&(t.message=e.target.value),localStorage.setItem(m,JSON.stringify(t))}function r(){const e=localStorage.getItem(m);if(e){const n=JSON.parse(e);s.value=n.email.trim(),l.value=n.message.trim()}}r();a.addEventListener("sumbit",i);function i(e){!s.value||!l.value?(e.preventDefault(),alert("Fill the rest")):(console.log({email:s.value,message:l.value}),localStorage.removeItem(m),a.reset())}
 //# sourceMappingURL=2-form.js.map
