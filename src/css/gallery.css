@@ -1,0 +1,28 @@
+.body {
+  font-family: 'Montserrat';
+}
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery-item {
+  list-style: none;
+  width: calc((100% - 48px) / 3);
+}
