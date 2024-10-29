@@ -31,15 +31,15 @@ function populateData() {
     const parsedData = JSON.parse(savedData);
     emailInput.value = parsedData.email.trim();
     messageInput.value = parsedData.message.trim();
-    console.log(parsedData);
+    // console.log(parsedData);
   }
 }
 
 form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
+  event.preventDefault();
   if (!emailInput.value || !messageInput.value) {
-    event.preventDefault();
     alert('Fill please all fields');
   } else {
     console.log({ email: emailInput.value, message: messageInput.value });
